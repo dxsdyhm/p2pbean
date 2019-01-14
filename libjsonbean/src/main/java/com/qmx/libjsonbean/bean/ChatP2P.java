@@ -16,16 +16,30 @@ import com.qmx.libjsonbean.JsonCode;
  * @Author: dxs
  * @time: 2018/12/16
  * @Email: duanxuesong12@126.com
+ * 消息是各种消息的混合体.如果这个消息无需某个字段，保持默认值即可
  */
 public class ChatP2P extends BaseJsonBean {
+    /**
+     * 消息类型
+     * @see com.qmx.libjsonbean.utils.ChatP2PType
+     */
     private int type;
     private String text;
     private String url;
     private String localuri;
     private long time;
     private long duration;
+    /**
+     * 发送者id
+     */
     private String sendid;
+    /**
+     * 阿里云资源域
+     */
     private String buckname;
+    /**
+     * 阿里云资源名
+     */
     private String objkey;
     private String extra;
     private long chatmsgid;
