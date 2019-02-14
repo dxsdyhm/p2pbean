@@ -54,4 +54,6 @@ public class JsonCode {
     public static final int JSON_CODE_CHATMSEG=27;
     //触摸唤醒
     public static final int JSON_CODE_TOUCHWAKE=28;
+    //解绑主人信息（不是必然需要处理结果,功能由web完成）
+    public static final int JSON_CODE_UNBIND=29;
 }
