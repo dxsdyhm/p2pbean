@@ -19,6 +19,7 @@ public class DeviceConfig extends BaseJsonBean{
     private String wifissid;
     private boolean smartpicbookswitch;
     private boolean nightmodeswitch;
+    private boolean touchwake;
 
     public DeviceConfig() {
         super(JsonCode.JSON_CODE_SETTING);
@@ -102,6 +103,14 @@ public class DeviceConfig extends BaseJsonBean{
 
     public void setNightmodeswitch(boolean nightmodeswitch) {
         this.nightmodeswitch = nightmodeswitch;
+    }
+
+    public boolean isTouchwake() {
+        return touchwake;
+    }
+
+    public void setTouchwake(boolean touchwake) {
+        this.touchwake = touchwake;
     }
 
     @Override

@@ -52,4 +52,6 @@ public class JsonCode {
     public static final int JSON_CODE_DOWNLOADFILE=26;
     //聊天消息
     public static final int JSON_CODE_CHATMSEG=27;
+    //触摸唤醒
+    public static final int JSON_CODE_TOUCHWAKE=28;
 }
