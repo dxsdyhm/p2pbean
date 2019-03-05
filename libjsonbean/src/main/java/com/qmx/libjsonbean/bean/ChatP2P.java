@@ -43,6 +43,14 @@ public class ChatP2P extends BaseJsonBean {
     private String objkey;
     private String extra;
     private long chatmsgid;
+    /**
+     * 设备id
+     */
+    private String elfid;
+    /**
+     * 群组id
+     */
+    private String groupid;
     public ChatP2P() {
         super(JsonCode.JSON_CODE_CHATMSEG);
     }
@@ -133,6 +141,22 @@ public class ChatP2P extends BaseJsonBean {
 
     public void setChatmsgid(long chatmsgid) {
         this.chatmsgid = chatmsgid;
+    }
+
+    public String getElfid() {
+        return elfid;
+    }
+
+    public void setElfid(String elfid) {
+        this.elfid = elfid;
+    }
+
+    public void setGroupid(String groupid) {
+        this.groupid = groupid;
+    }
+
+    public String getGroupid() {
+        return groupid;
     }
 
     @Override
